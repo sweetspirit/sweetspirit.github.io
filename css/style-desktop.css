@@ -45,12 +45,22 @@ z-index: 10001;
 		{
 		}
 /*max-width prevented menu from running into page content*/
-		#header .inner {	
+		#header .inner {
 		max-width: 65em;
     width: calc(100% - 6em);
     margin: 0 auto;
     position: relative;
 	}
+
+		header {
+			margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+		display: block;
+		}
 
 /*********************************************************************************/
 /* Logo                                                                          */
