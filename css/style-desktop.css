@@ -29,9 +29,9 @@ cursor: default;
 height: 5em;
 left: 0;
 line-height: 5em;
-position: relative;
-text-align: border-top;
-top: 0;
+posit	ion: relative;
+text-align: left;
+top: 10;
 width: 100%;
 z-index: 10001;
 	}
