@@ -46,7 +46,7 @@ z-index: 10001;
 		}
 /*max-width prevented menu from running into page content*/
 		#header .inner {
-		max-width: 75em;
+		max-width: 65em;
     width: calc(100% - 6em);
     margin: 0 auto;
     position: relative;
