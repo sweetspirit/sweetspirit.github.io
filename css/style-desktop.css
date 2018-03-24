@@ -70,7 +70,7 @@ max-width prevented menu from running into page content
 				left: 0;
 				line-height: 5em;
 				position: fixed;
-				text-align: center;
+				text-align: right;
 				top: 0;
 				width: 100%;
 				z-index: 10001;
