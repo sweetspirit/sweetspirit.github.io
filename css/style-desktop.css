@@ -70,7 +70,7 @@ max-width prevented menu from running into page content
 				left: 0;
 				line-height: 5em;
 				position: fixed;
-				text-align: right;
+				text-align: center;
 				top: 0;
 				width: 100%;
 				z-index: 10001;
@@ -93,7 +93,7 @@ max-width prevented menu from running into page content
 					}
 
 				#header .logo {
-					font-family: 'Pacifico', cursive;
+					font-family: FontAwesome, cursive;
 					display: inline-block;
 					height: inherit;
 					left: 0;
