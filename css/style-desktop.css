@@ -427,6 +427,7 @@ max-width prevented menu from running into page content
 	#content header
 	{
 		margin-bottom: 2em;
+		padding-top: 2em;
 	}
 
 	#content header h2
