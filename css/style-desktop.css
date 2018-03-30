@@ -3094,10 +3094,49 @@
 
 	body {
 		position: relative;
-		padding-top: 5em;
-	}
 
-	#header {
+	}
+	.header {
+		background-color: #f2f2f2;
+		padding: 60px;
+		text-align: center;
+	}
+	#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+	.content {
+	  padding: 100px;
+	}
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+	.sticky + .content {
+	  padding-top: 60px;
+	}
+	#intro {
 		background: #1c1c1c;
 		color: #d5d5d5;
 		cursor: default;
@@ -3109,12 +3148,9 @@
 		top: 0;
 		width: 100%;
 		z-index: 10001;
-		background-color: #f2f2f2;
- 		padding: 30px;
- 		
-	}
+}
 
-		#header .inner {
+		#intro .inner {
 			max-width: 65em;
 			width: calc(100% - 6em);
 			margin: 0 auto;
@@ -3123,14 +3159,14 @@
 
 			@media screen and (max-width: 480px) {
 
-				#header .inner {
+				#intro .inner {
 					max-width: 90%;
 					width: 90%;
 				}
 
 			}
 
-		#header .logo {
+		#intro .logo {
 			font-family: 'Pacifico', cursive;
 			display: inline-block;
 			height: inherit;
@@ -3147,11 +3183,11 @@
 			padding: 0;
 		}
 
-			#header .logo:hover {
+			#intro .logo:hover {
 				color: rgba(229, 71, 75, 0.75);
 			}
 
-		#header a {
+		#intro a {
 			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
@@ -3165,17 +3201,17 @@
 			font-size: .85em;
 		}
 
-			#header a:hover {
+			#intro a:hover {
 				color: rgba(255, 255, 255, 0.75);
 			}
 
-			#header a:last-child {
+			#intro a:last-child {
 				padding-right: 0em;
 			}
 
 			@media screen and (max-width: 736px) {
 
-				#header a {
+				#intro a {
 					padding: 0 0.5em;
 				}
 
@@ -3183,7 +3219,7 @@
 
 	@media screen and (max-width: 480px) {
 
-		#header {
+		#intro {
 			min-width: 320px;
 		}
 
