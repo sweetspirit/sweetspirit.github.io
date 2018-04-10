@@ -22,6 +22,21 @@
 		display: block;
 	}
 
+	aside {
+		height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0%;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    padding-top: 90px;/* prevents words from being obscured by top nav */
+		text-indent: 0;
+		color: #f2f2f2;
+		padding-left: 6px;
+	}
+
 	body {
 		line-height: 1;
 	}
@@ -1584,15 +1599,17 @@
 /* Type */
 
 	body {
-		background-color: #fff;
+		background-color: #ffffe6; /*background color of the text */
 		color: #111111;
-	}
 
+	}
+/*for chaning font aesthetic*/
 	body, input, select, textarea {
-		font-family: "Lato", sans-serif;
+		font-family: "Montserrat", sans-serif; //changes fonts on all pages//
 		font-size: 15pt;
-		font-weight: 300;
-		line-height: 2;
+		font-weight: 500;
+		line-height: 1.5;
+		text-indent: 25px;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1656,14 +1673,14 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0; //changes distance between paragraphs
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: none;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1731,27 +1748,30 @@
 		padding: 0.5em 0 0.5em 2em;
 	}
 
-	code {
-		border-radius: 0;
-		border: solid 1px;
+	code { /*the box*/
+		border-radius: 1;
+		border: 1rem solid;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
+		font-size: 1em;
+		margin: 0 20em;
+		padding: 0.2em 0.2em;
+
 	}
 
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
-		margin: 0 0 2em 0;
+		margin: 0 0 4em 0;
+		align-content: center;
+
 	}
 
 		pre code {
 			display: block;
-			line-height: 1.75;
-			padding: 1em 1.5em;
+			line-height: 1;
 			overflow-x: auto;
+			text-align: center;
 		}
 
 	hr {
@@ -2522,18 +2542,21 @@
 	section.special, article.special {
 		text-align: center;
 	}
-
+	.inner {
+		margin-left: 20px;
+	}
 	section .inner {
-		max-width: 65em;
-		width: calc(100% - 6em);
-		margin: 0 auto;
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 15px;
+		text-align: left;
+
 	}
 
 		@media screen and (max-width: 480px) {
 
 			section .inner {
 				max-width: 90%;
-				width: 90%;
 			}
 
 		}
@@ -3126,7 +3149,13 @@
   color: white;
 }
 	.content {
-	  padding: 100px;
+		padding-top: 10px;
+		margin-left: 200px;
+		margin-right: 200px;
+		margin-top: 5em;
+		margin-bottom: 10em;
+		border: solid red;
+
 	}
 	.sticky {
 	  position: fixed;
@@ -3136,6 +3165,80 @@
 	.sticky + .content {
 	  padding-top: 60px;
 	}
+
+	.pagetitle	{
+		text-indent: 1em;
+}
+.sidenavleft {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    padding-top: 90px;/* prevents words from being obscured by top nav */
+		text-indent: 0;
+}
+
+.sidenavleft a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+		text-indent: 0;
+}
+
+.sidenavleft a:hover {
+    color: #f1f1f1;
+		font-weight: bold;
+		text-indent: 0;
+}
+
+.sidenavright {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    padding-top: 90px;/* prevents words from being obscured by top nav */
+		text-indent: 0;
+		margin-top: 1em;
+}
+.sidenavright h3 {
+	text-align: center;
+
+}
+.sidenavright p	{
+	  padding-left: 10px;
+		text-align: left;
+		font-size: 20px;
+		color: #009933;
+}
+.sidenavright a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+		text-indent: 0;
+}
+
+.sidenavright a:hover {
+    color: #f1f1f1;
+		font-weight: bold;
+		text-indent: 0;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
 	#intro {
 		background: #1c1c1c;
 		color: #d5d5d5;
@@ -3615,7 +3718,7 @@
 /* Main */
 
 	#main {
-		padding: 4em 0 2em 0;
+		padding: 6em 0 2em 0;
 	}
 
 	#one {
@@ -3786,6 +3889,9 @@
 		color: #f2a3a5;
 		padding: 4em 0 2em 0;
 		background: #e5474b;
+
+		margin-left: 200px;
+		margin-right: 200px;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3958,7 +4064,8 @@
 		#footer .inner {
 			max-width: 65em;
 			width: calc(100% - 6em);
-			margin: 0 auto;
+			margin-top: 10px;
+
 		}
 
 			@media screen and (max-width: 480px) {
