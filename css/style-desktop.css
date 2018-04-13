@@ -3221,12 +3221,10 @@
 		color: #009933;
 }
 .sidenavright a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-		text-indent: 0;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 20px;
+	color: #009933;
 }
 
 .sidenavright a:hover {
