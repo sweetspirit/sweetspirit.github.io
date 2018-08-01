@@ -2378,12 +2378,13 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
 			width: 100%;
+			position: fixed;
 		}
 
 			.image.fit img {
 				width: 100%;
+				text-align: center;
 			}
 
 		.image.main {
@@ -2395,7 +2396,99 @@
 			.image.main img {
 				width: 100%;
 			}
+			/* Centered text */
+.centered {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.center {
+	text-align: center;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 15em;
+    right: 27em;
+    background-color: white;
+		padding: 5px 5px 0px 5px;
+}
+/* Style the button and place it in the middle of the container/image */
+.image.fit .btn {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+	text-decoration: none;
+	text-transform: none;
+	padding-left: 10px;
+	padding-right: 10px;
+  padding-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.image.fit .btn:hover {
+  background-color: black;
+}
+
+a.image.fit .btn	{
+	text-decoration: none;
+	text-transform: none;
+}
+
+.left.btn	{
+	position: absolute;
+	top: 120%;
+	left: 40%;
+	transform: translate(-150%, 0%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #555;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.right.btn	{
+	position: absolute;
+	top: 120%;
+	right: 30%;
+	transform: translate(-25%, 0%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #555;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.left.btn:hover {
+  background-color: black;
+}
+.right.btn:hover {
+  background-color: black;
+}
 /* List */
 
 	ol {
@@ -3149,12 +3242,11 @@
   color: white;
 }
 	.content {
-		padding-top: 10px;
+		padding-top: 5em;
 		margin-left: 200px;
 		margin-right: 200px;
 		margin-top: 5em;
 		margin-bottom: 10em;
-		border: solid red;
 
 	}
 	.sticky {
@@ -3176,7 +3268,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #1c1c1c;
+    background-color: #8f2323;
     overflow-x: hidden;
     padding-top: 90px;/* prevents words from being obscured by top nav */
 		text-indent: 0;
@@ -3242,7 +3334,7 @@
 		color: #d5d5d5;
 		cursor: default;
 		height: 5em;
-		left: 0;
+		left: auto;
 		line-height: 5em;
 		position: fixed;
 		text-align: right;
@@ -3294,10 +3386,10 @@
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
-			padding: 0 2em;
+			padding: 0 1em;
 			color: #ffffff;
 			text-decoration: none;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			font-weight: 700;
 			font-size: .85em;
 		}
@@ -3882,14 +3974,29 @@
 
 /* Footer */
 
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: center;
+	background-color: #e5474b;
+	color: #f2a3a5;
+	padding: 4em 2em 2em 6em;
+	background: #e5474b;
+}
 	#footer {
 		background-color: #e5474b;
 		color: #f2a3a5;
-		padding: 4em 0 2em 0;
+		padding: 4em 2em 2em 6em;
 		background: #e5474b;
-
-		margin-left: 200px;
-		margin-right: 200px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4060,9 +4167,7 @@
 		}
 
 		#footer .inner {
-			max-width: 65em;
-			width: calc(100% - 6em);
-			margin-top: 10px;
+			text-align: center;
 
 		}
 
