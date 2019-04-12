@@ -1,48 +1,55 @@
-<!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Contact - Sweet Spirit</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/newMain.css" />
-	</head>
-	<body>
+  <head>
+  <link rel="stylesheet" href="css/comingsoon.css" />
+  </head>
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<a href="index.html" class="logo">Sweet Spirit</a>
-				<nav id="nav">
-					<a href="newAbout.html">About</a>
-					<a href="newSupport.html">Support</a>
-					<a href="newContact.html">Contact</a>
-					<a href="newResources.html">FAQ</a>
-				</nav>
-			</div>
-		</header>
-		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+<body>
 
-		<!-- Main -->
-		<section id="one">
-			<div class="inner">
-				<h1>Contact</h1>
-			</div>
-			<div class="inner">
-				<p>page content</p>
-			</div>
-		</section>
-		<!-- Footer -->
+<div class="bgimg">
+  <div class="topleft">
+    <p>Sweet Spirit: Recipes for Reparations</p>
+  </div>
+  <div class="middle">
+    <h1>This page is coming soon</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p>If this expires and there's nothing here, my bad.</p>
+  </div>
+</div>
 
-      <!-- Scripts -->
-  			<script src="assets/js/jquery.min.js"></script>
-  			<script src="assets/js/skel.min.js"></script>
-  			<script src="assets/js/util.js"></script>
-  			<script src="assets/js/main.js"></script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("April 30, 2019 17:00:00").getTime();
 
-  	</body>
-  </html>
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
